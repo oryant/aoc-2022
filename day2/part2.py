@@ -3,21 +3,9 @@ import os
 SCORES = {"X": 0, "Y": 3, "Z": 6, "rock": 1, "paper": 2, "scissors": 3}
 
 LOOKUP = {
-    "A": {
-        "name": "rock",
-        "losesto": "B",
-        "beats": "C"
-    },
-    "B": {
-        "name": "paper",
-        "losesto": "C",
-        "beats": "A"
-    },
-    "C": {
-        "name": "scissors",
-        "losesto": "A",
-        "beats": "B"
-    },
+    "A": {"name": "rock", "losesto": "B", "beats": "C"},
+    "B": {"name": "paper", "losesto": "C", "beats": "A"},
+    "C": {"name": "scissors", "losesto": "A", "beats": "B"},
 }
 
 with open(os.path.join(os.getcwd(), "input.txt"), "r") as guide:
