@@ -10,7 +10,7 @@ def letter_priority(letter: str) -> int:
 
 def process_rucksack(rucksack: str) -> int:  # type: ignore
     common_letter = set(rucksack[: len(rucksack) // 2]).intersection(
-        rucksack[len(rucksack) // 2 :]
+        rucksack[len(rucksack) // 2 :]  # noqa: E203
     )
     return letter_priority(list(common_letter)[0])
 
