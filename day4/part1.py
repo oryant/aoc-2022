@@ -7,7 +7,7 @@ def parse_line(line: str) -> list[list]:
 
 
 def compare_assignments(pair: list[list]) -> bool:
-    pair = sorted(pair, key=lambda a: len(range(*a)), reverse=True)  # sort by size of range
+    pair = sorted(pair, key=lambda a: len(range(*a)), reverse=True)  # sort by size of range  # noqa: E501
     result = (int(pair[0][0]) <= int(pair[1][0])) and (
         int(pair[0][1]) >= int(pair[1][1])
     )
